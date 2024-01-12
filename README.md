@@ -12,7 +12,7 @@ The service will enable to:
 ---------------- 
 * Java 11
 * Spring Boot Starter Web 3.1.2
-* Javax Persistence Api 2.2
+* Javax Persistence API 2.2
 * Spring Boot Starter Data JPA 3.1.2
 ---------------- 
 **Run the Application:**
