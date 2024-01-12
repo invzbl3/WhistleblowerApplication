@@ -13,3 +13,6 @@ The service will enable to:
 * Java 11
 * Spring Boot
 * 
+---------------- 
+Run the Application:
+Run your Spring Boot application, and it will start a server on localhost:8080.
