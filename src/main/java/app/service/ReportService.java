@@ -1,7 +1,7 @@
-package org.service;
+package app.service;
 
-import org.entity.Report;
-import org.repository.ReportRepository;
+import app.entity.Report;
+import app.repository.ReportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.Date;
