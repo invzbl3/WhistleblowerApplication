@@ -14,5 +14,5 @@ The service will enable to:
 * Spring Boot
 * 
 ---------------- 
-Run the Application:
-Run your Spring Boot application, and it will start a server on localhost:8080.
+**Run the Application:**
+Run your Spring Boot application, and it will start a server on `localhost:8080`.
