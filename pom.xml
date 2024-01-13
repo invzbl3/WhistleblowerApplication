@@ -59,8 +59,8 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <!--<version>8.0.20</version>-->
-            <version>8.0.23</version> <!-- Use the appropriate version -->
+            <version>8.0.20</version>
+            <!-- <version>8.0.23</version> &lt;!&ndash; Use the appropriate version &ndash;&gt;-->
         </dependency>
     </dependencies>
 
