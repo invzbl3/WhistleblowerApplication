@@ -6,6 +6,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.util.Date;
 
+/**
+ * javax is long gone (legal dispute), it's jakarta nowadays
+ * cfr https://spring.io/guides/gs/accessing-data-jpa/
+ */
 @Entity
 public class Report {
     @Id
