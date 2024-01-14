@@ -2,7 +2,6 @@ package app.controller;
 
 import app.entity.Report;
 import app.service.ReportService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
