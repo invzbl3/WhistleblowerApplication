@@ -29,7 +29,11 @@ public class ReportController {
      * @param model
      * @return
      *
-     * With this setup, when you access the /api/reports/dashboard endpoint,
+     * 1#. Make sure that your controller method returns the name of the
+     * Thymeleaf template without the file extension (e.g., "dashboard"),
+     * and it adds the reports attribute to the model.
+     * <p>
+     * 2#. With this setup, when you access the /api/reports/dashboard endpoint,
      * the Thymeleaf template will be processed, and the reports will be displayed
      * in the dashboard. Adjust the paths and template structure based on your needs.
      */
