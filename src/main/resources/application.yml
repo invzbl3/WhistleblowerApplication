@@ -8,3 +8,16 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+
+    # For Thymeleaf:
+#    spring:
+#      thymeleaf:
+#        prefix: classpath:/templates/
+#        suffix: .html
+
+    # For JSP:
+#  spring:
+#    mvc:
+#      view:
+#        prefix: /WEB-INF/views/
+#        suffix: .jsp
