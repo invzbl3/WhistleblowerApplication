@@ -9,8 +9,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/reports")
 public class ReportController {
-    @Autowired
-    private ReportService reportService;
+    private final ReportService reportService;
+
+    public ReportController(ReportService reportService) {
+        this.reportService = reportService;
+    }
 
     @GetMapping
     public List<Report> getAllReports() {

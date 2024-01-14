@@ -9,8 +9,11 @@ import java.util.List;
 
 @Service
 public class ReportService {
-    @Autowired
-    private ReportRepository reportRepository;
+    private final ReportRepository reportRepository;
+
+    public ReportService(ReportRepository reportRepository) {
+        this.reportRepository = reportRepository;
+    }
 
     public List<Report> getAllReports() {
         return reportRepository.findAll();
