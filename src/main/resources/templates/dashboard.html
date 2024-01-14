@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Dashboard</title>
+</head>
+<body>
+
+<h1>Reports Dashboard</h1>
+
+<!-- Display all reports -->
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Reporter Name</th>
+        <th>Description</th>
+        <th>Timestamp</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="report : ${reports}">
+        <td th:text="${report.id}"></td>
+        <td th:text="${report.reporterName}"></td>
+        <td th:text="${report.description}"></td>
+        <td th:text="${report.timestamp}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Form to submit a new report -->
+<form method="post" action="/api/reports">
+    <label for="reporterName">Reporter Name:</label>
+    <input type="text" id="reporterName" name="reporterName" required>
+    <br>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+    <br>
+    <button type="submit">Submit Report</button>
+</form>
+
+</body>
+</html>
