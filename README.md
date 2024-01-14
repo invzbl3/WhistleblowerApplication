@@ -12,8 +12,9 @@ The service will enable to:
 ---------------- 
 * Java 17
 * Spring Boot Starter Web 3.1.2
-* Javax Persistence API 2.2
+* Jakarta Persistence API 3.1.0
 * Spring Boot Starter Data JPA 3.1.2
 ---------------- 
 **Run the Application:**
-Run your Spring Boot application, and it will start a server on `localhost:8080`.
+Run your Spring Boot application, and it will start a server on `localhost:8080`
+or accordingly as: http://localhost:8080/api/reports/dashboard.
