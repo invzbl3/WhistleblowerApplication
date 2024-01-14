@@ -7,6 +7,16 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+/**
+ * By using @Controller, you're indicating that this class is responsible for handling views,
+ * and Spring will look for a Thymeleaf template named "dashboard.html" in the specified template
+ * resolver location.
+ * <p>
+ * With this adjustment, when you access the /api/reports/dashboard endpoint, the Thymeleaf
+ * template will be processed, and the reports will be displayed in the dashboard.
+ * Make sure your project is properly configured with Thymeleaf dependencies and a correct
+ * template resolver for Thymeleaf to work.
+ */
 @Controller
 @RequestMapping("/api/reports")
 public class ReportController {
