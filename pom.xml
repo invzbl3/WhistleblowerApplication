@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>3.1.2</version>
+            <version>3.0.0</version>
         </dependency>
 
         <!-- Add the javax.persistence dependency -->
@@ -49,11 +49,11 @@
         </dependency>-->
 
         <!-- For Maven -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.6.6.Final</version> &lt;!&ndash; Use a version compatible with your Spring Boot version &ndash;&gt;
-        </dependency>-->
+            <version>5.6.6.Final</version> <!-- Use a version compatible with your Spring Boot version -->
+        </dependency>
 
         <!-- Add the Spring Boot Starter Web dependency -->
         <dependency>
