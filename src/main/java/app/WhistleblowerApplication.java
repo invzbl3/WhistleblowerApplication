@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-/*@EntityScan("src/main/java/app/entity")*/
+//@EntityScan("src/main/java/app/entity")
 @EntityScan(basePackages = {"app.entity"})
 @EnableJpaRepositories(basePackages = {"app.repository"})
 public class WhistleblowerApplication {
