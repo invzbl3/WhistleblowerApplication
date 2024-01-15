@@ -7,14 +7,10 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-//import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.thymeleaf.spring5.SpringTemplateEngine;
-//import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
-//import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
-//import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
@@ -63,7 +59,7 @@ public class MvcConfig implements WebMvcConfigurer {
      *   Thymeleaf templates are located in the src/main/resources/templates/ directory.
      */
     @Bean
-    public TemplateResolver templateResolver() {
+    public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
         resolver.setPrefix("classpath:/templates/"); // Change the path accordingly
         resolver.setSuffix(".html");
