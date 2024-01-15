@@ -1,6 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.3</version> <!-- Adjust to the latest version -->
+    </parent>
 
     <groupId>org.example</groupId>
     <artifactId>WhistleblowerApplication</artifactId>
@@ -8,71 +15,47 @@
     <packaging>jar</packaging>
 
     <name>WhistleblowerApplication</name>
-    <url>http://maven.apache.org</url>
+    <description>Spring Boot Application</description>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <!-- No need for properties section if you're using the spring-boot-starter-parent -->
 
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-
+        <!-- Spring Boot Starters -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
-        <dependency>
-            <groupId>jakarta.persistence</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-            <version>3.1.0</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-            <version>3.1.2</version>
         </dependency>
 
-        <!--<dependency>
-          <groupId>com.h2database</groupId>
-          <artifactId>h2</artifactId>
-          <scope>runtime</scope>
-        </dependency>-->
-
-        <!-- Add the Spring Boot Starter Web dependency -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>3.1.2</version>
         </dependency>
 
-        <!-- Other dependencies -->
+        <!-- Database Connector -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.20</version>
-            <!-- <version>8.0.23</version> &lt;!&ndash; Use the appropriate version &ndash;&gt;-->
+            <version>8.0.20</version> <!-- Adjust to the latest version -->
+        </dependency>
+
+        <!-- Testing -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version> <!-- Use the latest version -->
-                <configuration>
-                    <source>17</source>
-                    <target>17</target>
-                </configuration>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
