@@ -10,7 +10,7 @@
 <h1>Reports Dashboard</h1>
 
 <!-- Display all reports -->
-<table border="1">
+<table border="1" id="reportsTable">
     <thead>
     <tr>
         <th>ID</th>
@@ -20,7 +20,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="report : ${reports}">
+    <tr th:each="report : ${reports}" th:style="${'cursor:pointer;'}" th:onclick="'alert(\'Report ID: ' + ${report.id} + '\')'" onmouseover="changeColor(this)" onmouseout="restoreColor(this)">
         <td th:text="${report.id}"></td>
         <td th:text="${report.reporterName}"></td>
         <td th:text="${report.description}"></td>
@@ -39,6 +39,19 @@
     <br>
     <button type="submit">Submit Report</button>
 </form>
+
+<!-- Add JavaScript inline -->
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    function changeColor(row) {
+        row.style.backgroundColor = '#e6f7ff'; // Change color on mouseover
+    }
+
+    function restoreColor(row) {
+        row.style.backgroundColor = ''; // Restore color on mouseout
+    }
+    /*]]>*/
+</script>
 
 </body>
 </html>
