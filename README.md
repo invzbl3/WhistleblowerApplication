@@ -19,4 +19,5 @@ The service will enable to:
 Run your Spring Boot application, and it will start a server on `localhost:8080`
 or accordingly as: 
 - http://localhost:8080/api/reports/dashboard;
-- http://localhost:8080/api/reports.
+- http://localhost:8080/api/reports;
+- http://localhost:8080/favicon.ico.
