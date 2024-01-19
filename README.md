@@ -21,3 +21,5 @@ or accordingly as:
 - http://localhost:8080/api/reports/dashboard;
 - http://localhost:8080/api/reports;
 - http://localhost:8080/favicon.ico.
+
+![WhistleblowerApplication(3)](https://github.com/invzbl3/WhistleblowerApplication/assets/24904825/5505f6e2-d798-4696-a1a8-58ad9542b2a2)
