@@ -19,13 +19,13 @@ The service will enable to:
 * MySQL 8.0.20
 ---------------- 
 **Run the Application:**
-Run your Spring Boot application, and it will start a server on `localhost:8080`
+Run your `Spring Boot` application, and it will start a server on `localhost:8080`
 or accordingly as: 
 - http://localhost:8080/api/reports/dashboard;
 - http://localhost:8080/api/reports;
 - http://localhost:8080/favicon.ico.
 ---------------- 
-To run `Maven` lifecycle command under the option "Run", 
+To run `Maven` lifecycle command under the option `"Run"`, 
 you need to add the following command as:
 
 `clean install -U`
