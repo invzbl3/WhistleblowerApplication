@@ -28,7 +28,7 @@ or accordingly as:
 To run `Maven` lifecycle command, 
 you need to add the following command as:
 
-`clean install -U`
+clean install -U
 ---------------- 
 To run `Spring Boot` application, 
 you need to add inside `Environment variables` as:
