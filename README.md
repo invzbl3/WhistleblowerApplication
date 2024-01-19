@@ -25,10 +25,10 @@ or accordingly as:
 - http://localhost:8080/api/reports;
 - http://localhost:8080/favicon.ico.
 ---------------- 
-To run `Maven` lifecycle command, 
+To run `Maven` lifecycle command under the option "Run", 
 you need to add the following command as:
 
-clean install -U
+`clean install -U`
 ---------------- 
 To run `Spring Boot` application, 
 you need to add inside `Environment variables` as:
