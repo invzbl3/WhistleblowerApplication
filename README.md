@@ -1,4 +1,7 @@
 # WhistleblowerApplication
+
+The "Whistleblower" project is a `Restful` service.
+
 A `whistleblower` platform involves various components, including a `web` application for reporting, a database to store information securely, 
 and backend logic to handle submissions. Below is a simplified example of a `whistleblower` platform using `Java` with `Spring Boot`, a popular 
 `Java` framework.
@@ -22,6 +25,20 @@ The service will enable to:
 * Jakarta Persistence API `3.1.0`
 * JUnit `4.13.2`
 ----------------
+Installing
+----------
+
+Clone this repository to your local machine using:
+
+```shell
+git clone https://github.com/invzbl3/WhistleblowerApplication.git
+```
+Create a database by specifying URL for connection:
+
+```
+jdbc:mysql://localhost/whistleblower_db?allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false&useUnicode=true&serverTimezone=UTC&characterEncoding=UTF8
+```
+using own `datasource` username & password
 
 **Run the Application:**
 
@@ -30,6 +47,10 @@ or accordingly as:
 - http://localhost:8080/api/reports/dashboard;
 - http://localhost:8080/api/reports;
 - http://localhost:8080/favicon.ico.
+
+and open [Swagger](http://localhost:8080/api/swagger-ui.html)
+
+# REST Endpoints for WhistleblowerApplication
 
 ### Report Controller
 | HTTP Method | REST Endpoint                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -50,3 +71,5 @@ you need to add inside `Environment variables` as:
 `DB_PASSWORD=...`
 
 ![WhistleblowerApplication(3)](https://github.com/invzbl3/WhistleblowerApplication/assets/24904825/5505f6e2-d798-4696-a1a8-58ad9542b2a2)
+
+All these REST endpoints are intended for use in the application.
