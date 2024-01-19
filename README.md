@@ -48,8 +48,6 @@ or accordingly as:
 - http://localhost:8080/api/reports;
 - http://localhost:8080/favicon.ico.
 
-and open [Swagger](http://localhost:8080/api/swagger-ui.html)
-
 # REST Endpoints for WhistleblowerApplication
 
 ### Report Controller
