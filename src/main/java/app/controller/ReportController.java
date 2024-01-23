@@ -32,7 +32,7 @@ public class ReportController {
     }
 
     @PostMapping
-    public Report submitReport(@RequestBody Report report) {
+    public Report submitReport(Report report) {
         return reportService.saveReport(report);
     }
 
